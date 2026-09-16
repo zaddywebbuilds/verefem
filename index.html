@@ -75,6 +75,18 @@ section{padding-block:56px}
 .card p{margin:0;color:var(--muted);font-size:.95rem}
 .card h3{margin-bottom:4px}
 
+/* before / after */
+.ba{margin-top:30px}
+.ba-grid{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:6px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.ba-grid figure{margin:0;position:relative}
+.ba-grid img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.ba-grid figcaption{position:absolute;left:10px;right:10px;bottom:10px;text-align:center;color:#fff;font-weight:800;text-transform:uppercase;font-size:clamp(.72rem,2.6vw,.95rem);letter-spacing:.04em;padding:8px 6px;border-radius:10px}
+.ba-grid .bad{background:rgba(60,45,40,.85)}
+.ba-grid .good{background:rgba(194,85,95,.92)}
+.ba-grid .vs{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:48px;height:48px;border-radius:50%;background:#fff;color:var(--green);font-weight:800;display:grid;place-content:center;box-shadow:0 4px 14px rgba(0,0,0,.3);font-size:.95rem}
+.ba-cap{text-align:center;margin:14px 0 0;color:var(--muted)}
+.ba-cap b{color:var(--green)}
+
 /* agitate */
 .agitate{background:var(--green);color:#f3ece6}
 .agitate h2{color:#fff}
@@ -257,6 +269,14 @@ footer p{max-width:760px;margin:0 auto 10px}
       <div class="card"><div class="ico">🛏️</div><div><h3>You start dodging him</h3><p>Headache today, tired tomorrow, “my stomach” next week. The excuses pile up, and so does the distance.</p></div></div>
       <div class="card"><div class="ico">💔</div><div><h3>He starts to feel rejected</h3><p>He doesn’t know it’s dryness. He only knows you’re not interested — and that is where the wahala begins.</p></div></div>
     </div>
+    <div class="ba narrow">
+      <div class="ba-grid">
+        <figure><img src="images/dry.webp" width="600" height="600" alt="A dried-out rose" loading="lazy"><figcaption class="bad">😣 Dry &amp; painful</figcaption></figure>
+        <figure><img src="images/wet.webp" width="600" height="600" alt="A fresh pink flower dripping with water" loading="lazy"><figcaption class="good">💧 Wet &amp; sweet</figcaption></figure>
+        <span class="vs">VS</span>
+      </div>
+      <p class="ba-cap">Which one is your flower right now? <b>A flower without water can’t bloom</b> — and neither can your bedroom.</p>
+    </div>
   </div>
 </section>
 
@@ -429,7 +449,7 @@ footer p{max-width:760px;margin:0 auto 10px}
     <p><b>VeraFem Sweetener</b> — Intimate Wellness Syrup · Dietary Supplement · 200ml. Produced by Tradoherb. Marketed by Nostalgia Sales.</p>
     <p>This product is a dietary supplement and is not intended to diagnose, treat, cure or prevent any disease. Individual results vary. Not for persons under 18. Consult your healthcare provider if pregnant, nursing, taking medication or managing a medical condition.</p>
     <p>This site is not part of the Facebook website or Meta Platforms, Inc., and is not endorsed by Facebook in any way. FACEBOOK is a trademark of Meta Platforms, Inc.</p>
-    <p>Lifestyle photos: cottonbro studio, Anna Shvets, Tima Miroshnichenko, Jack Sparrow, Mike Jones and Kelvin Garba on Pexels.</p>
+    <p>Lifestyle photos: cottonbro studio, Anna Shvets, Tima Miroshnichenko, Jack Sparrow, Mike Jones, Kelvin Garba, Lany-Jade Mondou and Wyxina Tresse on Pexels.</p>
     <p>© <span id="yr">2026</span> VeraFem. All rights reserved.</p>
   </div>
 </footer>
