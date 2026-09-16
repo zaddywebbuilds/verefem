@@ -115,8 +115,11 @@ section{padding-block:56px}
 /* how to */
 .howto{background:var(--cream)}
 .steps{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:24px}
-.step{background:#fff;border-radius:var(--radius);padding:20px;text-align:center;box-shadow:0 4px 14px rgba(14,59,48,.06)}
-.step .n{font-size:2rem}
+.step{background:#fff;border-radius:var(--radius);padding:0 0 20px;text-align:center;box-shadow:0 4px 14px rgba(14,59,48,.06);overflow:hidden}
+.step .ph{position:relative;margin-bottom:26px}
+.step .ph img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.step .n{position:absolute;left:50%;bottom:-22px;transform:translateX(-50%);width:46px;height:46px;border-radius:50%;background:#fff;display:grid;place-content:center;font-size:1.45rem;box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.step h3,.step p{padding-inline:16px}
 .step p{margin:0;color:var(--muted);font-size:.93rem}
 .course{margin-top:18px;background:var(--green);color:#fff;border-radius:14px;padding:14px 18px;text-align:center;font-weight:500}
 .course b{color:var(--gold)}
@@ -318,9 +321,9 @@ footer p{max-width:760px;margin:0 auto 10px}
       <h2>Easier than making Sunday light soup</h2>
     </div>
     <div class="steps">
-      <div class="step"><div class="n">🌅</div><h3>Morning</h3><p>Take 10ml (2 teaspoons).</p></div>
-      <div class="step"><div class="n">🌙</div><h3>Night</h3><p>Take another 10ml (2 teaspoons).</p></div>
-      <div class="step"><div class="n">🧊</div><h3>Keep it fresh</h3><p>Shake well before use. Refrigerate after opening.</p></div>
+      <div class="step"><div class="ph"><img src="images/use-morning.webp" width="720" height="540" alt="Smiling woman in her kitchen in the morning" loading="lazy"><span class="n">🌅</span></div><h3>Morning</h3><p>Take 10ml (2 teaspoons).</p></div>
+      <div class="step"><div class="ph"><img src="images/use-night.webp" width="720" height="540" alt="Woman relaxing in bed at night by a bedside lamp" loading="lazy"><span class="n">🌙</span></div><h3>Night</h3><p>Take another 10ml (2 teaspoons).</p></div>
+      <div class="step"><div class="ph"><img src="images/use-fresh.webp" width="720" height="540" alt="Woman opening the fridge" loading="lazy"><span class="n">🧊</span></div><h3>Keep it fresh</h3><p>Shake well before use. Refrigerate after opening.</p></div>
     </div>
     <div class="course narrow">One 200ml bottle lasts <b>10 days</b>. For best results, take it consistently — that’s why most ladies choose the <b>Buy 3 + Get 1 FREE</b> pack (40 days).</div>
   </div>
@@ -422,7 +425,7 @@ footer p{max-width:760px;margin:0 auto 10px}
     <p><b>VeraFem Sweetener</b> — Intimate Wellness Syrup · Dietary Supplement · 200ml. Produced by Tradoherb. Marketed by Nostalgia Sales.</p>
     <p>This product is a dietary supplement and is not intended to diagnose, treat, cure or prevent any disease. Individual results vary. Not for persons under 18. Consult your healthcare provider if pregnant, nursing, taking medication or managing a medical condition.</p>
     <p>This site is not part of the Facebook website or Meta Platforms, Inc., and is not endorsed by Facebook in any way. FACEBOOK is a trademark of Meta Platforms, Inc.</p>
-    <p>Meme photos: cottonbro studio, Anna Shvets and Tima Miroshnichenko on Pexels.</p>
+    <p>Lifestyle photos: cottonbro studio, Anna Shvets, Tima Miroshnichenko, Jack Sparrow and Mike Jones on Pexels.</p>
     <p>© <span id="yr">2026</span> VeraFem. All rights reserved.</p>
   </div>
 </footer>
