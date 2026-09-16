@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VeraFem Sweetener – Bring the Sweetness Back | Pay on Delivery in Ghana</title>
+<meta name="description" content="VeraFem Sweetener is a plant-based intimate wellness syrup that supports natural wetness, freshness and confidence. Free delivery across Ghana. Pay when it arrives.">
+<meta property="og:title" content="VeraFem Sweetener – Ɛyɛ dɛ paa 🍯">
+<meta property="og:description" content="Plant-based intimate wellness syrup. 50% off today. Free delivery + pay on delivery anywhere in Ghana.">
+<meta property="og:image" content="images/og.jpg">
+<meta name="theme-color" content="#0e3b30">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Great+Vibes&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="images/hero.webp">
+<style>
+:root{
+  --green:#0e3b30; --green-2:#14503f; --rose:#c2555f; --coral:#ef6a5d; --cream:#f7ede3;
+  --cream-2:#fdf8f3; --ink:#1d1b1a; --muted:#6b625c; --gold:#e9b949; --wa:#25d366;
+  --radius:18px; --shadow:0 10px 30px rgba(14,59,48,.14);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Poppins,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--cream-2);line-height:1.55;font-size:16px;padding-bottom:78px}
+img{max-width:100%;display:block;height:auto}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;line-height:1.15;margin:0 0 .5em;color:var(--green)}
+h1{font-size:clamp(1.9rem,6.2vw,3.1rem);font-weight:800}
+h2{font-size:clamp(1.55rem,5vw,2.3rem)}
+h3{font-size:1.15rem;font-family:Poppins,sans-serif;font-weight:700}
+p{margin:0 0 1em}
+.script{font-family:"Great Vibes",cursive;color:var(--rose);font-weight:400}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:18px}
+.narrow{max-width:680px;margin:0 auto}
+section{padding-block:56px}
+.center{text-align:center}
+.eyebrow{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--rose);background:#fbe3e1;padding:6px 12px;border-radius:99px;margin-bottom:14px}
+.twi{font-style:italic;color:var(--rose);font-weight:600}
+
+/* top bar */
+.topbar{background:var(--green);color:#fff;font-size:.86rem;text-align:center;padding:9px 12px;font-weight:500}
+.topbar b{color:var(--gold)}
+.timer{display:inline-flex;gap:4px;margin-left:6px;font-variant-numeric:tabular-nums}
+.timer span{background:var(--coral);color:#fff;border-radius:6px;padding:1px 6px;font-weight:700}
+
+/* buttons */
+.btn{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;background:linear-gradient(180deg,#f47a6c,var(--rose));color:#fff;text-decoration:none;font-weight:700;font-size:1.08rem;padding:17px 28px;border-radius:14px;box-shadow:0 8px 22px rgba(194,85,95,.38);border:0;cursor:pointer;width:100%;max-width:440px;text-align:center;line-height:1.2;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn small{display:block;font-weight:500;font-size:.78rem;opacity:.92}
+.btn.pulse{animation:pulse 2.2s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 8px 22px rgba(194,85,95,.38),0 0 0 0 rgba(239,106,93,.55)}60%{box-shadow:0 8px 22px rgba(194,85,95,.38),0 0 0 14px rgba(239,106,93,0)}}
+.btn.green{background:linear-gradient(180deg,var(--green-2),var(--green));box-shadow:0 8px 22px rgba(14,59,48,.3)}
+.trust{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:14px;font-size:.84rem;color:var(--muted);font-weight:500}
+.trust span{display:inline-flex;align-items:center;gap:6px}
+
+/* hero */
+.hero{background:radial-gradient(1200px 500px at 80% 0%,#f9dcd6 0%,transparent 60%),var(--cream);padding-block:28px 48px}
+.hero-grid{display:grid;gap:22px;align-items:center}
+.hero-grid .copy{order:-1}
+.hero h1{margin-bottom:.4em}
+.hero-img{position:relative;border-radius:24px;overflow:hidden;box-shadow:var(--shadow);max-width:460px;margin:0 auto;width:100%}
+.hero-img .badge{position:absolute;top:14px;right:14px;background:var(--coral);color:#fff;border-radius:50%;width:84px;height:84px;display:grid;place-content:center;text-align:center;font-weight:800;line-height:1;font-size:1.5rem;transform:rotate(10deg);box-shadow:0 6px 16px rgba(0,0,0,.2)}
+.hero-img .badge small{font-size:.7rem;font-weight:600}
+.stars{color:var(--gold);letter-spacing:2px}
+.rating{display:flex;align-items:center;gap:8px;font-size:.9rem;color:var(--muted);margin-bottom:10px}
+.hero .lede{font-size:1.06rem;color:#3b3431}
+.ticks{list-style:none;padding:0;margin:0 0 22px}
+.ticks li{position:relative;padding-left:30px;margin-bottom:8px;font-weight:500}
+.ticks li:before{content:"✓";position:absolute;left:0;top:1px;width:21px;height:21px;border-radius:50%;background:var(--green);color:#fff;font-size:.75rem;display:grid;place-content:center}
+
+/* problem */
+.problem{background:#fff}
+.cards{display:grid;gap:14px;margin-top:26px}
+.card{background:var(--cream-2);border:1px solid #f0e0d2;border-radius:var(--radius);padding:20px 20px 16px;display:flex;gap:14px;align-items:flex-start}
+.card .ico{flex:none;width:46px;height:46px;border-radius:14px;background:#fbe3e1;display:grid;place-content:center;font-size:1.4rem}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.card h3{margin-bottom:4px}
+
+/* agitate */
+.agitate{background:var(--green);color:#f3ece6}
+.agitate h2{color:#fff}
+.agitate .eyebrow{background:rgba(255,255,255,.12);color:#ffc9c2}
+.memes{display:grid;gap:16px;margin:28px 0}
+.meme{background:#fff;color:var(--ink);border-radius:var(--radius);overflow:hidden;box-shadow:0 12px 28px rgba(0,0,0,.25)}
+.meme .top{background:#111;color:#fff;font-weight:800;text-transform:uppercase;font-size:.92rem;padding:14px 16px;letter-spacing:.02em;line-height:1.35}
+.meme .face{font-size:3.2rem;text-align:center;padding:14px 0 4px}
+.meme .bottom{padding:4px 16px 16px;text-align:center;font-weight:600}
+.meme .bottom em{display:block;color:var(--rose);font-size:.85rem;font-weight:600;margin-top:4px}
+.truth{background:rgba(255,255,255,.07);border-left:4px solid var(--coral);border-radius:12px;padding:18px 20px;font-size:1.05rem}
+.truth b{color:#fff}
+
+/* solution */
+.solution-grid{display:grid;gap:30px;align-items:center}
+.solution .pic{border-radius:24px;overflow:hidden;box-shadow:var(--shadow);max-width:460px;margin:0 auto}
+.benefits{display:grid;gap:12px;margin:18px 0 24px}
+.benefit{display:flex;gap:12px;align-items:center;background:#fff;border-radius:14px;padding:12px 14px;box-shadow:0 4px 14px rgba(14,59,48,.07)}
+.benefit .ico{flex:none;width:42px;height:42px;border-radius:50%;border:2px solid var(--coral);display:grid;place-content:center;font-size:1.15rem}
+.benefit b{display:block;color:var(--green)}
+.benefit span{font-size:.88rem;color:var(--muted)}
+.ingredients{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));margin-top:30px}
+.ing{background:var(--green);color:#fff;border-radius:16px;padding:16px}
+.ing .pct{font-family:"Playfair Display",serif;font-size:1.7rem;color:var(--gold);font-weight:800;line-height:1}
+.ing b{display:block;margin:6px 0 2px}
+.ing span{font-size:.84rem;opacity:.85}
+.badges{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:18px}
+.badges span{background:#fbe3e1;color:var(--rose);font-weight:600;font-size:.8rem;padding:6px 12px;border-radius:99px}
+
+/* how to */
+.howto{background:var(--cream)}
+.steps{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:24px}
+.step{background:#fff;border-radius:var(--radius);padding:20px;text-align:center;box-shadow:0 4px 14px rgba(14,59,48,.06)}
+.step .n{font-size:2rem}
+.step p{margin:0;color:var(--muted);font-size:.93rem}
+.course{margin-top:18px;background:var(--green);color:#fff;border-radius:14px;padding:14px 18px;text-align:center;font-weight:500}
+.course b{color:var(--gold)}
+
+/* reviews */
+.reviews{background:#fff}
+.rev-grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:26px}
+.rev{background:var(--cream-2);border:1px solid #f0e0d2;border-radius:var(--radius);padding:20px}
+.rev .who{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.rev .av{width:44px;height:44px;border-radius:50%;background:var(--rose);color:#fff;display:grid;place-content:center;font-weight:700}
+.rev .who b{display:block;line-height:1.2}
+.rev .who small{color:var(--muted)}
+.rev p{margin:0;font-size:.95rem}
+.verified{color:#1a8f5a;font-size:.75rem;font-weight:600}
+.afterlaugh{margin-top:22px;background:#111;color:#fff;border-radius:var(--radius);padding:18px 20px;text-align:center;font-weight:600}
+.afterlaugh span{font-size:1.6rem;display:block}
+
+/* offer */
+.offer{background:radial-gradient(900px 400px at 50% 0%,#f9dcd6 0%,transparent 70%),var(--cream)}
+.packs{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));margin-top:30px;align-items:stretch}
+.pack{position:relative;background:#fff;border-radius:22px;padding:18px 18px 22px;box-shadow:var(--shadow);display:flex;flex-direction:column;text-align:center;border:2px solid transparent}
+.pack.best{border-color:var(--coral);order:-1}
+.pack .ribbon{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--coral);color:#fff;font-size:.78rem;font-weight:700;padding:5px 14px;border-radius:99px;white-space:nowrap}
+.pack.pop .ribbon{background:var(--green)}
+.pack img{border-radius:14px;aspect-ratio:1/1;object-fit:cover;width:100%;margin-bottom:14px}
+.pack h3{margin-bottom:2px;font-size:1.2rem}
+.pack .sub{color:var(--muted);font-size:.86rem;margin-bottom:10px}
+.price{display:flex;align-items:baseline;justify-content:center;gap:10px;margin-bottom:4px}
+.price .now{font-family:"Playfair Display",serif;font-size:2.3rem;font-weight:800;color:var(--green)}
+.price .was{text-decoration:line-through;color:#9d918a}
+.save{display:inline-block;background:#e6f4ec;color:#1a7a4d;font-weight:700;font-size:.8rem;padding:3px 10px;border-radius:99px;margin:0 auto 12px}
+.pack ul{list-style:none;padding:0;margin:0 0 18px;text-align:left;font-size:.9rem}
+.pack li{padding:5px 0;border-bottom:1px dashed #eee}
+.pack li:before{content:"✓ ";color:var(--green);font-weight:700}
+.pack .btn{margin-top:auto;max-width:none;font-size:1rem;padding:15px 18px}
+.note{margin:26px auto 0;max-width:680px;background:#fff7e0;border:1px dashed var(--gold);border-radius:14px;padding:14px 16px;font-size:.9rem;text-align:center}
+
+/* faq */
+.faq details{background:#fff;border-radius:14px;margin-bottom:10px;box-shadow:0 3px 12px rgba(14,59,48,.06);overflow:hidden}
+.faq summary{cursor:pointer;list-style:none;padding:16px 46px 16px 18px;font-weight:600;position:relative;color:var(--green)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-size:1.4rem;color:var(--coral)}
+.faq details[open] summary:after{content:"–"}
+.faq details p{padding:0 18px 16px;margin:0;color:var(--muted);font-size:.95rem}
+
+/* final */
+.final{background:var(--green);color:#fff;text-align:center}
+.final h2{color:#fff}
+.final p{color:#e3d9d1}
+
+footer{background:#0a2a22;color:#b9aea6;font-size:.78rem;padding-block:28px;text-align:center}
+footer p{max-width:760px;margin:0 auto 10px}
+
+/* sticky bar */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:40;background:#fff;box-shadow:0 -6px 20px rgba(0,0,0,.12);padding:10px 14px;display:flex;align-items:center;gap:12px;justify-content:center;transform:translateY(110%);transition:transform .3s}
+.sticky.show{transform:none}
+.sticky .info{font-size:.8rem;line-height:1.25;color:var(--muted)}
+.sticky .info b{display:block;color:var(--green);font-size:1rem}
+.sticky .btn{width:auto;padding:13px 20px;font-size:.95rem;max-width:none}
+
+/* whatsapp */
+.wa{position:fixed;right:16px;bottom:90px;z-index:41;width:56px;height:56px;border-radius:50%;background:var(--wa);display:grid;place-content:center;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.wa svg{width:30px;height:30px;fill:#fff}
+
+/* recent purchase popup */
+.toast{position:fixed;left:14px;bottom:88px;z-index:42;max-width:min(340px,calc(100vw - 90px));background:#fff;border-radius:16px;box-shadow:0 12px 34px rgba(0,0,0,.2);display:flex;gap:10px;align-items:center;padding:10px 14px 10px 10px;transform:translateY(20px);opacity:0;pointer-events:none;transition:all .45s cubic-bezier(.2,.9,.3,1.2)}
+.toast.show{transform:none;opacity:1;pointer-events:auto}
+.toast img{width:54px;height:54px;border-radius:10px;object-fit:cover;flex:none}
+.toast .t{font-size:.8rem;line-height:1.35;color:var(--muted)}
+.toast .t b{color:var(--ink)}
+.toast .t .pk{color:var(--rose);font-weight:600}
+.toast .t small{display:flex;align-items:center;gap:4px;margin-top:2px;font-size:.72rem}
+.toast .t small i{width:7px;height:7px;border-radius:50%;background:#1fbf6b;display:inline-block}
+.toast .x{position:absolute;top:4px;right:8px;border:0;background:none;color:#aaa;font-size:1rem;cursor:pointer;padding:2px}
+
+@media (min-width:860px){
+  body{padding-bottom:0}
+  section{padding-block:80px}
+  .hero{padding-block:48px 72px}
+  .hero-grid{grid-template-columns:1.05fr .95fr}
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .card{flex-direction:column}
+  .memes{grid-template-columns:repeat(3,1fr)}
+  .solution-grid{grid-template-columns:.9fr 1.1fr}
+  .pack.best{order:0;transform:scale(1.03)}
+  .sticky{display:none}
+  .wa{bottom:22px}
+  .toast{bottom:22px;left:22px}
+}
+@media (prefers-reduced-motion:reduce){.btn.pulse{animation:none}*{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<!-- ============ EDIT THESE LINKS IN ONE PLACE (see CONFIG in the script at the bottom) ============ -->
+
+<div class="topbar">🔥 <b>50% OFF</b> ends tonight <span class="timer" aria-label="Offer countdown"><span id="hh">00</span>:<span id="mm">00</span>:<span id="ss">00</span></span> · Free delivery + Pay on delivery</div>
+
+<!-- ================= HERO (PROBLEM HOOK) ================= -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-img">
+      <img src="images/hero.webp" width="900" height="1350" alt="VeraFem Sweetener intimate wellness syrup box and bottle" fetchpriority="high">
+      <div class="badge">50%<small>OFF TODAY</small></div>
+    </div>
+    <div class="copy">
+      <div class="rating"><span class="stars">★★★★★</span> Loved by women from Accra to Tamale</div>
+      <h1>Is dryness quietly stealing the <span class="script" style="font-size:1.15em">sweetness</span> from your bedroom?</h1>
+      <p class="lede">He may not say it out loud, but he feels it. And you feel it too — the discomfort, the excuses, the <i>“not tonight, I’m tired”</i>. <b>VeraFem Sweetener</b> is a plant-based syrup made to support your natural wetness, freshness and confidence — from the inside.</p>
+      <ul class="ticks">
+        <li>Supports natural vaginal wetness</li>
+        <li>Enhances natural sweetness &amp; freshness</li>
+        <li>Promotes pleasure, arousal &amp; confidence</li>
+      </ul>
+      <a href="#order" class="btn pulse">YES, I WANT MY SWEETNESS BACK <small>Pay only when it reaches you</small></a>
+      <div class="trust"><span>🚚 Free delivery nationwide</span><span>💵 Pay on delivery</span><span>🌿 Plant-based</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= PROBLEM ================= -->
+<section class="problem">
+  <div class="wrap">
+    <div class="narrow center">
+      <span class="eyebrow">Awuraa, let’s talk the truth small 🤫</span>
+      <h2>Dryness doesn’t just affect your body. It affects your home.</h2>
+      <p>Childbirth, breastfeeding, stress, age and hormone changes can all reduce natural lubrication. It’s common — but nobody talks about it. So women suffer in silence.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="ico">😣</div><div><h3>Intimacy starts to hurt</h3><p>Burning, friction and discomfort turn what should be sweet into something you secretly dread.</p></div></div>
+      <div class="card"><div class="ico">🛏️</div><div><h3>You start dodging him</h3><p>Headache today, tired tomorrow, “my stomach” next week. The excuses pile up, and so does the distance.</p></div></div>
+      <div class="card"><div class="ico">💔</div><div><h3>He starts to feel rejected</h3><p>He doesn’t know it’s dryness. He only knows you’re not interested — and that is where the wahala begins.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AGITATE (with Ghanaian humour) ================= -->
+<section class="agitate">
+  <div class="wrap">
+    <div class="narrow center">
+      <span class="eyebrow">Ei! Asɛm aba 😅</span>
+      <h2>Be honest… which one of these is happening in your house?</h2>
+    </div>
+    <div class="memes">
+      <div class="meme">
+        <div class="top">Him at 9pm: “Babe, I’m too tired, work was hard.”</div>
+        <div class="face">📱👀</div>
+        <div class="bottom">Also him at 1am: still online on WhatsApp<em>Chale, who is he chatting? 🤔</em></div>
+      </div>
+      <div class="meme">
+        <div class="top">You: “I’m fine, it doesn’t hurt.”</div>
+        <div class="face">🙂 → 😬</div>
+        <div class="bottom">Your face 2 minutes later<em>Sister, e no be small thing.</em></div>
+      </div>
+      <div class="meme">
+        <div class="top">Him: “I’m going to watch the match with the boys.”</div>
+        <div class="face">⚽🤨</div>
+        <div class="bottom">No match is playing today<em>Maame, open your eyes small.</em></div>
+      </div>
+    </div>
+    <div class="narrow truth">
+      We laugh, but it’s not funny when it’s your home. <b>A man who feels unwanted in his own bedroom starts looking for sweetness elsewhere.</b> Don’t wait until you’re hearing “Madam, who is this Abena?” before you act. The good news? Dryness is not your destiny.
+    </div>
+  </div>
+</section>
+
+<!-- ================= SOLUTION ================= -->
+<section class="solution">
+  <div class="wrap solution-grid">
+    <div class="pic"><img src="images/lifestyle.webp" width="800" height="1016" alt="Smiling woman taking a spoon of VeraFem Sweetener syrup" loading="lazy"></div>
+    <div>
+      <span class="eyebrow">Introducing</span>
+      <h2>VeraFem <span class="script" style="font-size:1.25em">Sweetener</span></h2>
+      <p>A premium intimate wellness syrup crafted from carefully selected natural ingredients. Two teaspoons in the morning, two at night — and you give your body the support it needs to feel <b>wet, fresh and confident</b> again. <span class="twi">Ɛyɛ dɛ paa!</span> 🍯</p>
+      <div class="benefits">
+        <div class="benefit"><div class="ico">💧</div><div><b>Supports natural wetness</b><span>Less friction, more comfort when it matters</span></div></div>
+        <div class="benefit"><div class="ico">🌸</div><div><b>Enhances sweetness &amp; freshness</b><span>Feel clean, fresh and feminine</span></div></div>
+        <div class="benefit"><div class="ico">❤️</div><div><b>Promotes pleasure &amp; arousal</b><span>Enjoy intimacy instead of enduring it</span></div></div>
+        <div class="benefit"><div class="ico">👑</div><div><b>Boosts your confidence</b><span>Stop dodging. Start enjoying.</span></div></div>
+      </div>
+      <a href="#order" class="btn green">SHOW ME THE PRICES ↓</a>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="ingredients">
+      <div class="ing"><div class="pct">80%</div><b>Azanza garckeana</b><span>The famous “goron tula” fruit, traditionally valued for women’s intimate wellness</span></div>
+      <div class="ing"><div class="pct">15%</div><b>Phoenix dactylifera</b><span>Dates — naturally sweet and nourishing</span></div>
+      <div class="ing"><div class="pct">5%</div><b>Syzygium aromaticum</b><span>Clove — a warm, aromatic spice</span></div>
+    </div>
+    <div class="badges"><span>🌿 Plant based</span><span>🧬 Non-GMO</span><span>🌱 Vegan friendly</span><span>🌾 Gluten free</span></div>
+  </div>
+</section>
+
+<!-- ================= HOW TO USE ================= -->
+<section class="howto">
+  <div class="wrap">
+    <div class="narrow center">
+      <span class="eyebrow">So simple</span>
+      <h2>Easier than making Sunday light soup</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="n">🌅</div><h3>Morning</h3><p>Take 10ml (2 teaspoons).</p></div>
+      <div class="step"><div class="n">🌙</div><h3>Night</h3><p>Take another 10ml (2 teaspoons).</p></div>
+      <div class="step"><div class="n">🧊</div><h3>Keep it fresh</h3><p>Shake well before use. Refrigerate after opening.</p></div>
+    </div>
+    <div class="course narrow">One 200ml bottle lasts <b>10 days</b>. For best results, take it consistently — that’s why most ladies choose the <b>Buy 3 + Get 1 FREE</b> pack (40 days).</div>
+  </div>
+</section>
+
+<!-- ================= REVIEWS ================= -->
+<!-- NOTE: replace these with real customer feedback (with permission) before running ads. -->
+<section class="reviews">
+  <div class="wrap">
+    <div class="narrow center">
+      <span class="eyebrow">What the ladies are saying</span>
+      <h2>Real women. Real sweetness.</h2>
+    </div>
+    <div class="rev-grid">
+      <div class="rev">
+        <div class="who"><div class="av">AA</div><div><b>Akosua A. · Kumasi</b><small><span class="stars">★★★★★</span></small></div></div>
+        <p>“After my second baby, intimacy was painful and I kept giving excuses. I’m on my second bottle now and I feel so much more comfortable. My husband has noticed — he’s even buying me kelewele without being asked 😂”</p>
+      </div>
+      <div class="rev">
+        <div class="who"><div class="av">NA</div><div><b>Naa Adjeley · Teshie, Accra</b><small><span class="stars">★★★★★</span></small></div></div>
+        <p>“I was shy to order, but they called me, delivered, and I paid at my door. I feel fresh and confident again. Ɛyɛ dɛ paa!”</p>
+      </div>
+      <div class="rev">
+        <div class="who"><div class="av">ED</div><div><b>Elikem D. · Ho</b><small><span class="stars">★★★★★</span></small></div></div>
+        <p>“At 47 I thought dryness was just my portion. I took VeraFem morning and night and I feel the difference. I ordered the 3 + 1 pack so I don’t run out.”</p>
+      </div>
+    </div>
+    <div class="afterlaugh narrow"><span>🏃🏾‍♂️💨</span>After VeraFem: your man closing from work at 4:59pm like the Black Stars are playing a final 😂</div>
+  </div>
+</section>
+
+<!-- ================= OFFER ================= -->
+<section class="offer" id="order">
+  <div class="wrap">
+    <div class="narrow center">
+      <span class="eyebrow">⏰ Promo ends tonight</span>
+      <h2>Choose your pack — <span class="script" style="font-size:1.2em">pay when it arrives</span></h2>
+      <p>Buy directly at manufacturer’s price. <b>Free delivery</b> anywhere in Ghana and you pay <b>only when the product is in your hands</b>. No risk at all.</p>
+    </div>
+    <div class="packs">
+      <div class="pack">
+        <img src="images/pack-1.webp" width="700" height="935" alt="1 VeraFem Sweetener bottle and box" loading="lazy">
+        <h3>Starter</h3>
+        <div class="sub">1 bottle · 10 days</div>
+        <div class="price"><span class="was">GH₵380</span><span class="now">GH₵190</span></div>
+        <span class="save">You save GH₵190</span>
+        <ul><li>1 × VeraFem Sweetener (200ml)</li><li>Free delivery</li><li>Pay on delivery</li></ul>
+        <a class="btn order-link" href="#">ORDER 1 BOTTLE</a>
+      </div>
+      <div class="pack best">
+        <span class="ribbon">⭐ BEST VALUE · MOST ORDERED</span>
+        <img src="images/pack-4.webp" width="900" height="675" alt="VeraFem Sweetener bottles and boxes – buy 3 get 1 free" loading="lazy">
+        <h3>Complete Course</h3>
+        <div class="sub">Buy 3 + Get 1 FREE · 40 days</div>
+        <div class="price"><span class="was">GH₵1,180</span><span class="now">GH₵590</span></div>
+        <span class="save">Only GH₵147.50 per bottle</span>
+        <ul><li>4 × VeraFem Sweetener (200ml)</li><li><b>1 bottle absolutely FREE</b></li><li>Full 40-day course for best results</li><li>Free delivery · Pay on delivery</li></ul>
+        <a class="btn pulse order-link" href="#">GET 3 + 1 FREE</a>
+      </div>
+      <div class="pack pop">
+        <span class="ribbon">Popular</span>
+        <img src="images/pack-2.webp" width="800" height="800" alt="2 VeraFem Sweetener bottles and boxes" loading="lazy">
+        <h3>Sweet Duo</h3>
+        <div class="sub">2 bottles · 20 days</div>
+        <div class="price"><span class="was">GH₵580</span><span class="now">GH₵290</span></div>
+        <span class="save">Only GH₵145 per bottle</span>
+        <ul><li>2 × VeraFem Sweetener (200ml)</li><li>Free delivery</li><li>Pay on delivery</li></ul>
+        <a class="btn order-link" href="#">ORDER 2 BOTTLES</a>
+      </div>
+    </div>
+    <div class="note">📞 After you order, our customer care will <b>call you within 24 hours</b> to confirm delivery.<br><span class="twi">Mepa wo kyɛw</span>, only order if you’re ready to receive and pay — not if you’re travelling. Medaase! 🙏🏾</div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="faq">
+  <div class="wrap narrow">
+    <div class="center"><span class="eyebrow">Questions?</span><h2>We’ve got answers</h2></div>
+    <details><summary>Do I pay before delivery?</summary><p>No. Place your order, our team calls to confirm, and you pay when the product reaches you. Delivery is free.</p></details>
+    <details><summary>How do I take it and how long does a bottle last?</summary><p>10ml (2 teaspoons) in the morning and 10ml at night. One 200ml bottle lasts 10 days. Shake well and refrigerate after opening.</p></details>
+    <details><summary>How soon will I notice a difference?</summary><p>Every woman’s body is different. Take it consistently morning and night — that’s why we recommend the full 40-day course (Buy 3 + Get 1 Free).</p></details>
+    <details><summary>Who should not take it?</summary><p>It’s not for anyone under 18. If you are pregnant, breastfeeding, taking medication or have a medical condition, speak to your doctor first. Keep out of reach of children.</p></details>
+    <details><summary>What if I have more questions?</summary><p>Tap the WhatsApp button and chat with our customer care. We reply fast.</p></details>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA ================= -->
+<section class="final">
+  <div class="wrap narrow">
+    <h2>Your sweetness is not finished. It just needs support.</h2>
+    <p>Stop dodging. Stop the excuses. Give yourself — and your relationship — the comfort you both deserve. <span class="twi" style="color:#ffc9c2">Ɛnnɛ ara!</span> (Today itself!)</p>
+    <a href="#order" class="btn pulse">CLAIM 50% OFF BEFORE MIDNIGHT</a>
+    <div class="trust" style="justify-content:center;color:#cfc4bc"><span>🚚 Free delivery</span><span>💵 Pay on delivery</span><span>📞 Call within 24hrs</span></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><b>VeraFem Sweetener</b> — Intimate Wellness Syrup · Dietary Supplement · 200ml. Produced by Tradoherb. Marketed by Nostalgia Sales.</p>
+    <p>This product is a dietary supplement and is not intended to diagnose, treat, cure or prevent any disease. Individual results vary. Not for persons under 18. Consult your healthcare provider if pregnant, nursing, taking medication or managing a medical condition.</p>
+    <p>This site is not part of the Facebook website or Meta Platforms, Inc., and is not endorsed by Facebook in any way. FACEBOOK is a trademark of Meta Platforms, Inc.</p>
+    <p>© <span id="yr">2026</span> VeraFem. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- sticky mobile CTA -->
+<div class="sticky" id="sticky">
+  <div class="info"><b>GH₵190 <s style="color:#aaa;font-weight:400;font-size:.8rem">GH₵380</s></b>Free delivery · Pay on delivery</div>
+  <a href="#order" class="btn">ORDER NOW</a>
+</div>
+
+<!-- whatsapp -->
+<a class="wa" id="wa" href="#" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.3 8.7 3.3 15.7c0 2.2.6 4.4 1.7 6.3L3 29l7.2-1.9c1.8 1 3.9 1.5 5.9 1.5 7 0 12.7-5.7 12.7-12.7S23 3 16 3zm0 23.3c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.3 1.1 1.1-4.2-.3-.4c-1.1-1.7-1.6-3.6-1.6-5.6C5.1 9.9 10 5.1 16 5.1s10.9 4.9 10.9 10.6S22 26.3 16 26.3zm6-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.7 5.1 2.8 1.1 3.4.9 4 .8.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.4z"/></svg>
+</a>
+
+<!-- recent purchase popup -->
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <img id="toastImg" src="images/bottle.webp" alt="">
+  <div class="t" id="toastText"></div>
+  <button class="x" id="toastX" aria-label="Close">×</button>
+</div>
+
+<script>
+/* ===================== CONFIG ===================== */
+var CONFIG = {
+  // Order form links (profithive). Change here if the owner sends new links.
+  orderUrl: "https://profithive.net/app/ghc_order.php?pid=OTQ-&use=NzIxNzc-&&sets=",
+  whatsapp: "233506712450",
+  whatsappText: "Hello, I'm interested in VeraFem Sweetener. Please tell me more.",
+  popupFirstDelay: 7000,   // ms before first popup
+  popupEvery: [14000, 22000], // random gap between popups
+  popupVisible: 5500
+};
+
+/* order + whatsapp links */
+document.querySelectorAll('.order-link').forEach(function(a){ a.href = CONFIG.orderUrl; });
+document.getElementById('wa').href = 'https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(CONFIG.whatsappText);
+
+/* countdown to midnight (Ghana time, GMT) */
+(function(){
+  var hh=document.getElementById('hh'),mm=document.getElementById('mm'),ss=document.getElementById('ss');
+  function pad(n){return (n<10?'0':'')+n}
+  function tick(){
+    var now=new Date(), end=Date.UTC(now.getUTCFullYear(),now.getUTCMonth(),now.getUTCDate()+1);
+    var d=Math.max(0,Math.floor((end-now.getTime())/1000));
+    hh.textContent=pad(Math.floor(d/3600)); mm.textContent=pad(Math.floor(d%3600/60)); ss.textContent=pad(d%60);
+  }
+  tick(); setInterval(tick,1000);
+})();
+
+/* sticky bar appears after hero */
+(function(){
+  var s=document.getElementById('sticky'), hero=document.querySelector('.hero'), order=document.getElementById('order');
+  function onScroll(){
+    var pastHero = hero.getBoundingClientRect().bottom < 0;
+    var r = order.getBoundingClientRect();
+    var inOrder = r.top < window.innerHeight && r.bottom > 0;
+    s.classList.toggle('show', pastHero && !inOrder);
+  }
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+})();
+
+/* recent purchase popups */
+(function(){
+  var names = ["Akosua","Ama","Abena","Adwoa","Yaa","Afia","Akua","Efua","Esi","Araba","Kukua","Adjoa",
+    "Naa Adjeley","Naa Dedei","Korkor","Dzifa","Elikem","Sena","Enyonam","Mawusi","Selasi",
+    "Fuseina","Mariama","Ayishetu","Memunatu","Hawa","Gifty","Comfort","Josephine","Priscilla","Mavis","Beatrice"];
+  var places = ["Madina, Accra","East Legon, Accra","Dansoman, Accra","Teshie, Accra","Adenta, Accra","Kasoa",
+    "Tema Community 25","Ashaiman","Asokwa, Kumasi","Suame, Kumasi","Ejisu","Obuasi","Takoradi","Cape Coast",
+    "Winneba","Koforidua","Nkawkaw","Ho","Hohoe","Tamale","Bolgatanga","Wa","Sunyani","Techiman","Tarkwa","Nungua"];
+  var packs = [
+    {label:"Buy 3 + Get 1 FREE", img:"images/pack-4.webp", w:5},
+    {label:"2 bottles", img:"images/pack-2.webp", w:3},
+    {label:"1 bottle", img:"images/pack-1.webp", w:2}
+  ];
+  var times = ["just now","2 mins ago","5 mins ago","9 mins ago","14 mins ago","21 mins ago","27 mins ago","34 mins ago","48 mins ago","1 hr ago","1 hr ago","2 hrs ago"];
+  function pick(a){return a[Math.floor(Math.random()*a.length)]}
+  function pickPack(){var t=0,i,r;for(i=0;i<packs.length;i++)t+=packs[i].w;r=Math.random()*t;for(i=0;i<packs.length;i++){if((r-=packs[i].w)<0)return packs[i]}return packs[0]}
+  var toast=document.getElementById('toast'), txt=document.getElementById('toastText'), img=document.getElementById('toastImg');
+  var closed=false, lastName="";
+  document.getElementById('toastX').onclick=function(){closed=true;toast.classList.remove('show')};
+  function show(){
+    if(closed) return;
+    var n; do{n=pick(names)}while(n===lastName); lastName=n;
+    var p=pickPack();
+    img.src=p.img;
+    txt.innerHTML='<b>'+n+'</b> from <b>'+pick(places)+'</b> ordered <span class="pk">'+p.label+'</span><small><i></i>'+pick(times)+' · Pay on delivery</small>';
+    toast.classList.add('show');
+    setTimeout(function(){toast.classList.remove('show')},CONFIG.popupVisible);
+    var g=CONFIG.popupEvery; setTimeout(show, CONFIG.popupVisible + g[0] + Math.random()*(g[1]-g[0]));
+  }
+  setTimeout(show, CONFIG.popupFirstDelay);
+})();
+
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
