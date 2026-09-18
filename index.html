@@ -176,6 +176,30 @@ section{padding-block:56px}
 .pack .btn{margin-top:auto;max-width:none;font-size:1rem;padding:15px 18px}
 .note{margin:26px auto 0;max-width:680px;background:#fff7e0;border:1px dashed var(--gold);border-radius:14px;padding:14px 16px;font-size:.9rem;text-align:center}
 
+/* order form */
+.oform{max-width:680px;margin:34px auto 0;background:#fff;border-radius:22px;padding:24px 20px;box-shadow:var(--shadow);border:2px solid var(--coral);scroll-margin-top:16px}
+.oform h3{font-family:"Playfair Display",Georgia,serif;font-size:1.45rem;margin-bottom:4px;text-align:center}
+.osub{text-align:center;color:var(--muted);font-size:.92rem;margin-bottom:18px}
+.oform label{display:block;font-weight:600;font-size:.88rem;color:var(--green);margin-bottom:12px}
+.oform input:not([type=radio]):not([type=checkbox]),.oform select{display:block;width:100%;margin-top:5px;padding:13px 14px;border:1.5px solid #e5d6c9;border-radius:12px;font:inherit;font-weight:400;font-size:1rem;color:var(--ink);background:var(--cream-2)}
+.oform input:focus,.oform select:focus{outline:none;border-color:var(--coral);box-shadow:0 0 0 3px rgba(239,106,93,.18)}
+.oform .bad{border-color:#d33 !important;background:#fff4f3 !important}
+.orow{display:grid;gap:0 12px}
+.opacks{border:0;padding:0;margin:0 0 14px;display:grid;gap:8px}
+.opacks legend{font-weight:700;color:var(--green);font-size:.88rem;margin-bottom:6px}
+.opacks label{margin:0;cursor:pointer;position:relative}
+.opacks input{position:absolute;opacity:0}
+.opacks span{display:flex;justify-content:space-between;align-items:center;gap:10px;border:1.5px solid #e5d6c9;border-radius:12px;padding:12px 14px;background:var(--cream-2)}
+.opacks span em{font-style:normal;font-weight:500;color:var(--muted);font-size:.85rem;text-align:right}
+.opacks input:checked+span{border-color:var(--coral);background:#fdeceb;box-shadow:0 0 0 3px rgba(239,106,93,.15)}
+.opacks input:focus-visible+span{outline:2px solid var(--green)}
+.ocheck{display:flex !important;gap:10px;align-items:flex-start;font-weight:500 !important;color:var(--ink) !important}
+.ocheck input{margin-top:3px;width:18px;height:18px;accent-color:var(--rose);flex:none}
+.oerr{background:#fff4f3;color:#b3261e;border-radius:10px;padding:10px 12px;font-size:.9rem;font-weight:500}
+.oform .btn{max-width:none;margin-top:4px}
+.onote{text-align:center;color:var(--muted);font-size:.8rem;margin:10px 0 0}
+@media (min-width:600px){.orow{grid-template-columns:1fr 1fr}.oform{padding:30px 32px}}
+
 /* faq */
 .faq details{background:#fff;border-radius:14px;margin-bottom:10px;box-shadow:0 3px 12px rgba(14,59,48,.06);overflow:hidden}
 .faq summary{cursor:pointer;list-style:none;padding:16px 46px 16px 18px;font-weight:600;position:relative;color:var(--green)}
@@ -398,7 +422,7 @@ footer p{max-width:760px;margin:0 auto 10px}
         <div class="price"><span class="was">GH₵380</span><span class="now">GH₵190</span></div>
         <span class="save">You save GH₵190</span>
         <ul><li>1 × VeraFem Sweetener (200ml)</li><li>Free delivery</li><li>Pay on delivery</li></ul>
-        <a class="btn order-link" href="#">ORDER 1 BOTTLE</a>
+        <a class="btn order-link" href="#order-form" data-pack="1">ORDER 1 BOTTLE</a>
       </div>
       <div class="pack best">
         <span class="ribbon">⭐ BEST VALUE · MOST ORDERED</span>
@@ -408,7 +432,7 @@ footer p{max-width:760px;margin:0 auto 10px}
         <div class="price"><span class="was">GH₵1,180</span><span class="now">GH₵590</span></div>
         <span class="save">Only GH₵147.50 per bottle</span>
         <ul><li>4 × VeraFem Sweetener (200ml)</li><li><b>1 bottle absolutely FREE</b></li><li>Full 40-day course for best results</li><li>Free delivery · Pay on delivery</li></ul>
-        <a class="btn pulse order-link" href="#">GET 3 + 1 FREE</a>
+        <a class="btn pulse order-link" href="#order-form" data-pack="4">GET 3 + 1 FREE</a>
       </div>
       <div class="pack pop">
         <span class="ribbon">Popular</span>
@@ -418,9 +442,35 @@ footer p{max-width:760px;margin:0 auto 10px}
         <div class="price"><span class="was">GH₵580</span><span class="now">GH₵290</span></div>
         <span class="save">Only GH₵145 per bottle</span>
         <ul><li>2 × VeraFem Sweetener (200ml)</li><li>Free delivery</li><li>Pay on delivery</li></ul>
-        <a class="btn order-link" href="#">ORDER 2 BOTTLES</a>
+        <a class="btn order-link" href="#order-form" data-pack="2">ORDER 2 BOTTLES</a>
       </div>
     </div>
+    <form class="oform" id="order-form" novalidate>
+      <h3>📝 Fill this to place your order</h3>
+      <p class="osub">Takes 30 seconds. You pay only when it reaches you.</p>
+      <fieldset class="opacks">
+        <legend>Choose your pack</legend>
+        <label><input type="radio" name="pack" value="4" checked><span><b>Buy 3 + Get 1 FREE</b><em>GH₵590 · 40 days · Best value</em></span></label>
+        <label><input type="radio" name="pack" value="2"><span><b>2 bottles</b><em>GH₵290 · 20 days</em></span></label>
+        <label><input type="radio" name="pack" value="1"><span><b>1 bottle</b><em>GH₵190 · 10 days</em></span></label>
+      </fieldset>
+      <div class="orow">
+        <label>Full name<input name="name" autocomplete="name" required placeholder="e.g. Akosua Mensah"></label>
+        <label>Phone number<input name="phone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="e.g. 024 123 4567"></label>
+      </div>
+      <div class="orow">
+        <label>Region<select name="region" required>
+          <option value="">Select your region</option>
+          <option>Greater Accra</option><option>Ashanti</option><option>Central</option><option>Eastern</option><option>Western</option><option>Western North</option><option>Volta</option><option>Oti</option><option>Northern</option><option>Savannah</option><option>North East</option><option>Upper East</option><option>Upper West</option><option>Bono</option><option>Bono East</option><option>Ahafo</option>
+        </select></label>
+        <label>Town / City<input name="town" required placeholder="e.g. Madina"></label>
+      </div>
+      <label>Delivery address or landmark<input name="address" required placeholder="e.g. Near the Zongo Junction trotro station"></label>
+      <label class="ocheck"><input type="checkbox" name="ready" required> I’m ready to receive and pay when it arrives</label>
+      <p class="oerr" id="oerr" role="alert" hidden></p>
+      <button type="submit" class="btn pulse">SEND MY ORDER ON WHATSAPP <small>Opens WhatsApp — just tap Send</small></button>
+      <p class="onote">🔒 Your details are only used to deliver your order.</p>
+    </form>
     <div class="note">📞 After you order, our customer care will <b>call you within 24 hours</b> to confirm delivery.<br><span class="twi">Mepa wo kyɛw</span>, only order if you’re ready to receive and pay — not if you’re travelling. Medaase! 🙏🏾</div>
   </div>
 </section>
@@ -478,9 +528,8 @@ footer p{max-width:760px;margin:0 auto 10px}
 <script>
 /* ===================== CONFIG ===================== */
 var CONFIG = {
-  // Order form links (profithive). Change here if the owner sends new links.
-  orderUrl: "https://profithive.net/app/ghc_order.php?pid=OTQ-&use=NzIxNzc-&&sets=",
-  whatsapp: "233506712450",
+  // Orders from the form and the WhatsApp button both go to this number (country code, no + or spaces).
+  whatsapp: "233597210794",
   whatsappText: "Hello, I'm interested in VeraFem Sweetener. Please tell me more.",
   popupFirstDelay: 7000,   // ms before first popup
   popupEvery: [14000, 22000], // random gap between popups
@@ -488,7 +537,39 @@ var CONFIG = {
 };
 
 /* order + whatsapp links */
-document.querySelectorAll('.order-link').forEach(function(a){ a.href = CONFIG.orderUrl; });
+/* pack buttons pre-select the pack in the order form */
+document.querySelectorAll('.order-link').forEach(function(a){
+  a.addEventListener('click',function(){
+    var r=document.querySelector('.opacks input[value="'+a.dataset.pack+'"]'); if(r) r.checked=true;
+  });
+});
+
+/* order form -> WhatsApp message to the owner */
+(function(){
+  var f=document.getElementById('order-form'), err=document.getElementById('oerr');
+  var packs={"1":"1 bottle – GH₵190","2":"2 bottles – GH₵290","4":"Buy 3 + Get 1 FREE (4 bottles) – GH₵590"};
+  function clean(v){return (v||'').trim().replace(/\s+/g,' ')}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var d={}, bad=[];
+    ['name','phone','region','town','address'].forEach(function(k){ d[k]=clean(f[k].value); f[k].classList.remove('bad'); if(!d[k]) bad.push(k); });
+    var digits=d.phone.replace(/[^\d+]/g,'');
+    var badPhone = d.phone && !/^(\+?233|0)\d{9}$/.test(digits);
+    if(badPhone) bad.push('phone');
+    bad.forEach(function(k){ f[k].classList.add('bad'); });
+    var msg='';
+    if(badPhone && bad.length===1) msg='Please enter a valid Ghana phone number, e.g. 024 123 4567.';
+    else if(bad.length) msg='Please fill in all the fields so we can deliver to you.';
+    else if(!f.ready.checked) msg='Please tick the box to confirm you’re ready to receive and pay.';
+    if(msg){ err.textContent=msg; err.hidden=false; (bad.length?f[bad[0]]:f.ready).focus(); return; }
+    err.hidden=true;
+    var pack=packs[(f.querySelector('input[name=pack]:checked')||{}).value||'4'];
+    var text='*NEW ORDER – VeraFem Sweetener* 🛒\n\n'+
+      '*Pack:* '+pack+'\n*Name:* '+d.name+'\n*Phone:* '+d.phone+'\n*Region:* '+d.region+'\n*Town:* '+d.town+'\n*Address/Landmark:* '+d.address+
+      '\n\nPayment on delivery. I am ready to receive my order. 🙏🏾';
+    window.open('https://wa.me/'+CONFIG.whatsapp+'?text='+encodeURIComponent(text),'_blank');
+  });
+})();
 document.getElementById('wa').href = 'https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(CONFIG.whatsappText);
 
 /* countdown to midnight (Ghana time, GMT) */
